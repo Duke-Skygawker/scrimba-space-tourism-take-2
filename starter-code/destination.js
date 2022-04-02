@@ -16,44 +16,6 @@ const destinationContentSwapper = (ID) => {
   const planetImage = images.webp;
 
   // segment displayPlanet so that the tab-list never reloads
-  let tabListDiv = `<div class="tab-list underline-indicators flex">
-          <button
-            id="Moon"
-            aria-selected="true"
-            class="tab-btn ff-sans-cond fs-400 uppercase letter-spacing-2 bg-dark text-accent active"
-          >
-            Moon
-          </button>
-          <button
-            id="Mars"
-            aria-selected="false"
-            class="tab-btn ff-sans-cond fs-400 uppercase letter-spacing-2 bg-dark text-accent"
-          >
-            Mars
-          </button>
-          <button
-            id="Europa"
-            aria-selected="false"
-            class="tab-btn ff-sans-cond fs-400 uppercase letter-spacing-2 bg-dark text-accent"
-          >
-            Europa
-          </button>
-          <button
-            id="Titan"
-            aria-selected="false"
-            class="tab-btn ff-sans-cond fs-400 uppercase letter-spacing-2 bg-dark text-accent"
-          >
-            Titan
-          </button>
-          </div>`;
-
-  let destinationImageDiv = `<h2 class="numbered-title"><span>01</span> pick your destination</h2>
-        <img
-          class="planet-image"
-          id="planet-img"
-          src="${planetImage}"
-          alt="image-of-the-planet"
-        />`;
 
   let mainTextDiv = `<h1 class="fs-900 uppercase ff-serif text-white home-text">${name}</h1>
         <p
